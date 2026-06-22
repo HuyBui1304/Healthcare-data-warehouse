@@ -1,0 +1,316 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8533e002-8350-442f-b3da-d240cfcb7e1c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>HealthcareDW</ID>
+  <Name>HealthcareDW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>HealthcareDW</DataSourceID>
+  <Schema>
+    <xs:schema id="Healthcare_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Healthcare_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="45ab1619-bfbf-4eb9-b6df-3e2c80687711">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="HealthcareDW_DimAdmissionType" msprop:DbTableName="DimAdmissionType" msprop:FriendlyName="DimAdmissionType" msprop:TableType="Table" msprop:DbSchemaName="HealthcareDW" msprop:design-time-name="271d308f-7642-4585-8b64-f5392432a26e">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="AdmissionTypeKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="AdmissionTypeKey" msprop:DbColumnName="AdmissionTypeKey" msprop:design-time-name="f33048ac-ca65-4720-8b63-d0e64dde2db2" type="xs:int" />
+                  <xs:element name="AdmissionTypeName" msprop:FriendlyName="AdmissionTypeName" msprop:DbColumnName="AdmissionTypeName" msprop:design-time-name="f8aac699-408a-4828-804e-356132fd24c5">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="HealthcareDW_DimDate" msprop:DbTableName="DimDate" msprop:FriendlyName="DimDate" msprop:TableType="Table" msprop:DbSchemaName="HealthcareDW" msprop:design-time-name="4cb39e4e-c2e5-4325-b5ef-ccef3406a127">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateKey" msprop:FriendlyName="DateKey" msprop:DbColumnName="DateKey" msprop:design-time-name="046b2a8a-43af-4334-a03e-1f7213ce7679" type="xs:int" />
+                  <xs:element name="FullDate" msprop:FriendlyName="FullDate" msprop:DbColumnName="FullDate" msprop:design-time-name="7d4da6ab-c852-461e-a1a8-c344ba1fb2d8" type="xs:dateTime" />
+                  <xs:element name="DayOfMonth" msprop:FriendlyName="DayOfMonth" msprop:DbColumnName="DayOfMonth" msprop:design-time-name="e42cfa6d-320f-45a1-9215-eaa31c4e864c" type="xs:int" />
+                  <xs:element name="DayOfWeek" msprop:FriendlyName="DayOfWeek" msprop:DbColumnName="DayOfWeek" msprop:design-time-name="b5450f5a-eedf-4c41-8334-cd2e7cf08597" type="xs:int" />
+                  <xs:element name="DayName" msprop:FriendlyName="DayName" msprop:DbColumnName="DayName" msprop:design-time-name="da6ba27d-277c-4da6-a144-6218bbc7c93a">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="WeekOfYear" msprop:FriendlyName="WeekOfYear" msprop:DbColumnName="WeekOfYear" msprop:design-time-name="8b3865f2-8a39-4f74-9e13-52c58b2a5162" type="xs:int" />
+                  <xs:element name="Month" msprop:FriendlyName="Month" msprop:DbColumnName="Month" msprop:design-time-name="2ae615a0-c6bc-4b84-9cbc-6400f453140e" type="xs:int" />
+                  <xs:element name="MonthName" msprop:FriendlyName="MonthName" msprop:DbColumnName="MonthName" msprop:design-time-name="3ba551b9-c457-44d4-bca9-96176bac2773">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Quarter" msprop:FriendlyName="Quarter" msprop:DbColumnName="Quarter" msprop:design-time-name="da75a97e-448e-4231-b3b5-e53ae70d2830" type="xs:int" />
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="60af5f13-ed5c-428a-9e50-5f2b7c61a03b" type="xs:int" />
+                  <xs:element name="IsWeekend" msprop:FriendlyName="IsWeekend" msprop:DbColumnName="IsWeekend" msprop:design-time-name="51505734-2b35-48a6-bde3-a9c1d9225d6c" type="xs:boolean" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="HealthcareDW_DimDoctor" msprop:DbTableName="DimDoctor" msprop:FriendlyName="DimDoctor" msprop:TableType="Table" msprop:DbSchemaName="HealthcareDW" msprop:design-time-name="43cef674-fdd2-4c33-a0c3-806c939766e4">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DoctorKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="DoctorKey" msprop:DbColumnName="DoctorKey" msprop:design-time-name="5fc0e5e0-9de8-468e-bc9b-41895b9227f0" type="xs:int" />
+                  <xs:element name="DoctorName" msprop:FriendlyName="DoctorName" msprop:DbColumnName="DoctorName" msprop:design-time-name="08a855bf-5412-426d-a242-20ad7b819a0e">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="HealthcareDW_DimHospital" msprop:DbTableName="DimHospital" msprop:FriendlyName="DimHospital" msprop:TableType="Table" msprop:DbSchemaName="HealthcareDW" msprop:design-time-name="476ae8ef-fe6f-46a4-a2b0-9c4a5e951a45">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="HospitalKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="HospitalKey" msprop:DbColumnName="HospitalKey" msprop:design-time-name="85268206-a35a-420f-974b-502f24d31dcf" type="xs:int" />
+                  <xs:element name="HospitalName" msprop:FriendlyName="HospitalName" msprop:DbColumnName="HospitalName" msprop:design-time-name="12586dff-9fb6-4719-afdf-2522059964da">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="HealthcareDW_DimInsurance" msprop:DbTableName="DimInsurance" msprop:FriendlyName="DimInsurance" msprop:TableType="Table" msprop:DbSchemaName="HealthcareDW" msprop:design-time-name="c41f7ac6-ccf3-4212-96e4-cbef721ade26">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="InsuranceKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="InsuranceKey" msprop:DbColumnName="InsuranceKey" msprop:design-time-name="17f1353c-0196-474e-bd0c-4f82b3dc7c7d" type="xs:int" />
+                  <xs:element name="InsuranceProvider" msprop:FriendlyName="InsuranceProvider" msprop:DbColumnName="InsuranceProvider" msprop:design-time-name="88fe505d-eeaf-4a2d-a1f9-060fff11ff4b">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="HealthcareDW_DimMedicalCondition" msprop:DbTableName="DimMedicalCondition" msprop:FriendlyName="DimMedicalCondition" msprop:TableType="Table" msprop:DbSchemaName="HealthcareDW" msprop:design-time-name="c3177bf6-ef42-42f5-8715-ed136bd15698">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ConditionKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ConditionKey" msprop:DbColumnName="ConditionKey" msprop:design-time-name="18b71a0d-9556-49fe-9342-995582a9fbf7" type="xs:int" />
+                  <xs:element name="ConditionName" msprop:FriendlyName="ConditionName" msprop:DbColumnName="ConditionName" msprop:design-time-name="f9beb984-3703-4aaa-9710-763a51707daf">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="HealthcareDW_DimMedication" msprop:DbTableName="DimMedication" msprop:FriendlyName="DimMedication" msprop:TableType="Table" msprop:DbSchemaName="HealthcareDW" msprop:design-time-name="b87487ff-0511-4411-a48c-cdb791317c60">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MedicationKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="MedicationKey" msprop:DbColumnName="MedicationKey" msprop:design-time-name="5f758bb4-3005-434d-83a0-aa88d9e4ccae" type="xs:int" />
+                  <xs:element name="MedicationName" msprop:FriendlyName="MedicationName" msprop:DbColumnName="MedicationName" msprop:design-time-name="1bfcbc27-ec70-4e08-b894-1253f9d9cc30">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="HealthcareDW_DimPatient" msprop:DbTableName="DimPatient" msprop:FriendlyName="DimPatient" msprop:TableType="Table" msprop:DbSchemaName="HealthcareDW" msprop:design-time-name="aa3421bf-b859-4c5e-bacb-3b87a71dee5b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PatientKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="PatientKey" msprop:DbColumnName="PatientKey" msprop:design-time-name="6f6b275f-d6e4-4cbc-8329-9988efaae493" type="xs:int" />
+                  <xs:element name="PatientName" msprop:FriendlyName="PatientName" msprop:DbColumnName="PatientName" msprop:design-time-name="38428ebf-612c-4db7-bbf1-ee16e50a39c7">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Gender" msprop:FriendlyName="Gender" msprop:DbColumnName="Gender" msprop:design-time-name="4ad5ab09-c38c-4a95-a9a2-90e4561e17c7">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BloodType" msprop:FriendlyName="BloodType" msprop:DbColumnName="BloodType" msprop:design-time-name="3f61c58e-b0f2-4536-9291-1921aa82367e">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Age" msprop:FriendlyName="Age" msprop:DbColumnName="Age" msprop:design-time-name="0fe2f382-c15f-4e0c-a6c1-598a263b11b2" type="xs:int" />
+                  <xs:element name="AgeGroup" msprop:FriendlyName="AgeGroup" msprop:DbColumnName="AgeGroup" msprop:design-time-name="da979446-0e17-4787-ac09-06e8b25f6594">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="HealthcareDW_DimTestResult" msprop:DbTableName="DimTestResult" msprop:FriendlyName="DimTestResult" msprop:TableType="Table" msprop:DbSchemaName="HealthcareDW" msprop:design-time-name="e4c42165-735d-471f-bcc3-dcd80a8d3921">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TestResultKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="TestResultKey" msprop:DbColumnName="TestResultKey" msprop:design-time-name="f8001f2a-455c-4079-be0b-445b822cfc7f" type="xs:int" />
+                  <xs:element name="TestResultName" msprop:FriendlyName="TestResultName" msprop:DbColumnName="TestResultName" msprop:design-time-name="ac0a818c-32ce-4daf-b292-6cbffb2e7b12">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="HealthcareDW_FactAdmission" msprop:DbTableName="FactAdmission" msprop:FriendlyName="FactAdmission" msprop:TableType="Table" msprop:DbSchemaName="HealthcareDW" msprop:design-time-name="edcde51d-6297-42b7-be3b-257325e0aadf">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="AdmissionKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="AdmissionKey" msprop:DbColumnName="AdmissionKey" msprop:design-time-name="92a10ec0-274e-47ed-b554-476d86d988ca" type="xs:int" />
+                  <xs:element name="DateKey" msprop:FriendlyName="DateKey" msprop:DbColumnName="DateKey" msprop:design-time-name="0b91a8f4-895f-4f7c-b340-fe6561728688" type="xs:int" />
+                  <xs:element name="DischargeDateKey" msprop:FriendlyName="DischargeDateKey" msprop:DbColumnName="DischargeDateKey" msprop:design-time-name="1e1fa32d-3bb9-42ed-b1c3-fa69bfabf274" type="xs:int" />
+                  <xs:element name="PatientKey" msprop:FriendlyName="PatientKey" msprop:DbColumnName="PatientKey" msprop:design-time-name="4630e7d0-cc98-4fbb-9d23-7a807edbb454" type="xs:int" />
+                  <xs:element name="DoctorKey" msprop:FriendlyName="DoctorKey" msprop:DbColumnName="DoctorKey" msprop:design-time-name="13ff3bcc-51f1-49aa-a773-ce902b0989c8" type="xs:int" />
+                  <xs:element name="HospitalKey" msprop:FriendlyName="HospitalKey" msprop:DbColumnName="HospitalKey" msprop:design-time-name="7df91f20-87e7-4cc2-ad3f-1856cc3ac8b6" type="xs:int" />
+                  <xs:element name="InsuranceKey" msprop:FriendlyName="InsuranceKey" msprop:DbColumnName="InsuranceKey" msprop:design-time-name="f6e3ee83-6599-472e-91ef-c82af9262356" type="xs:int" />
+                  <xs:element name="MedicationKey" msprop:FriendlyName="MedicationKey" msprop:DbColumnName="MedicationKey" msprop:design-time-name="dece1322-7fb6-41bb-9779-688d5fe2b9bf" type="xs:int" />
+                  <xs:element name="AdmissionTypeKey" msprop:FriendlyName="AdmissionTypeKey" msprop:DbColumnName="AdmissionTypeKey" msprop:design-time-name="77b61447-a7e1-441d-8c9a-7cc71d1faf65" type="xs:int" />
+                  <xs:element name="TestResultKey" msprop:FriendlyName="TestResultKey" msprop:DbColumnName="TestResultKey" msprop:design-time-name="883b0f16-dc8a-4418-8669-91bb2175ce78" type="xs:int" />
+                  <xs:element name="ConditionKey" msprop:FriendlyName="ConditionKey" msprop:DbColumnName="ConditionKey" msprop:design-time-name="423a7de1-43dc-4c15-8a34-d43a621b4d25" type="xs:int" />
+                  <xs:element name="BillingAmount" msprop:FriendlyName="BillingAmount" msprop:DbColumnName="BillingAmount" msprop:design-time-name="edaa7d98-43be-4001-9597-6c506f5db818" type="xs:decimal" />
+                  <xs:element name="LengthOfStay" msprop:FriendlyName="LengthOfStay" msprop:DbColumnName="LengthOfStay" msprop:design-time-name="bcc5a9f8-de0a-4472-ad6b-69d5cd633cbf" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//HealthcareDW_DimAdmissionType" />
+          <xs:field xpath="AdmissionTypeKey" />
+        </xs:unique>
+        <xs:unique name="HealthcareDW_DimDate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//HealthcareDW_DimDate" />
+          <xs:field xpath="DateKey" />
+        </xs:unique>
+        <xs:unique name="HealthcareDW_DimDoctor_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//HealthcareDW_DimDoctor" />
+          <xs:field xpath="DoctorKey" />
+        </xs:unique>
+        <xs:unique name="HealthcareDW_DimHospital_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//HealthcareDW_DimHospital" />
+          <xs:field xpath="HospitalKey" />
+        </xs:unique>
+        <xs:unique name="HealthcareDW_DimInsurance_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//HealthcareDW_DimInsurance" />
+          <xs:field xpath="InsuranceKey" />
+        </xs:unique>
+        <xs:unique name="HealthcareDW_DimMedicalCondition_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//HealthcareDW_DimMedicalCondition" />
+          <xs:field xpath="ConditionKey" />
+        </xs:unique>
+        <xs:unique name="HealthcareDW_DimMedication_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//HealthcareDW_DimMedication" />
+          <xs:field xpath="MedicationKey" />
+        </xs:unique>
+        <xs:unique name="HealthcareDW_DimPatient_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//HealthcareDW_DimPatient" />
+          <xs:field xpath="PatientKey" />
+        </xs:unique>
+        <xs:unique name="HealthcareDW_DimTestResult_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//HealthcareDW_DimTestResult" />
+          <xs:field xpath="TestResultKey" />
+        </xs:unique>
+        <xs:unique name="HealthcareDW_FactAdmission_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//HealthcareDW_FactAdmission" />
+          <xs:field xpath="AdmissionKey" />
+        </xs:unique>
+        <xs:keyref name="FK_HealthcareDW_FactAdmission_AdmissionTypeKey" refer="Constraint1">
+          <xs:selector xpath=".//HealthcareDW_FactAdmission" />
+          <xs:field xpath="AdmissionTypeKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_HealthcareDW_FactAdmission_TestResultKey" refer="HealthcareDW_DimTestResult_Constraint1">
+          <xs:selector xpath=".//HealthcareDW_FactAdmission" />
+          <xs:field xpath="TestResultKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_HealthcareDW_FactAdmission_DateKey" refer="HealthcareDW_DimDate_Constraint1">
+          <xs:selector xpath=".//HealthcareDW_FactAdmission" />
+          <xs:field xpath="DateKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_HealthcareDW_FactAdmission_HospitalKey" refer="HealthcareDW_DimHospital_Constraint1">
+          <xs:selector xpath=".//HealthcareDW_FactAdmission" />
+          <xs:field xpath="HospitalKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_HealthcareDW_FactAdmission_DoctorKey" refer="HealthcareDW_DimDoctor_Constraint1">
+          <xs:selector xpath=".//HealthcareDW_FactAdmission" />
+          <xs:field xpath="DoctorKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_HealthcareDW_FactAdmission_InsuranceKey" refer="HealthcareDW_DimInsurance_Constraint1">
+          <xs:selector xpath=".//HealthcareDW_FactAdmission" />
+          <xs:field xpath="InsuranceKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_HealthcareDW_FactAdmission_MedicationKey" refer="HealthcareDW_DimMedication_Constraint1">
+          <xs:selector xpath=".//HealthcareDW_FactAdmission" />
+          <xs:field xpath="MedicationKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_HealthcareDW_FactAdmission_ConditionKey" refer="HealthcareDW_DimMedicalCondition_Constraint1">
+          <xs:selector xpath=".//HealthcareDW_FactAdmission" />
+          <xs:field xpath="ConditionKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_HealthcareDW_FactAdmission_PatientKey" refer="HealthcareDW_DimPatient_Constraint1">
+          <xs:selector xpath=".//HealthcareDW_FactAdmission" />
+          <xs:field xpath="PatientKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_HealthcareDW_FactAdmission_DischargeDateKey" refer="HealthcareDW_DimDate_Constraint1">
+          <xs:selector xpath=".//HealthcareDW_FactAdmission" />
+          <xs:field xpath="DischargeDateKey" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Healthcare_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>

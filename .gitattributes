@@ -1,0 +1,14 @@
+* text=auto
+*.dtsx text eol=crlf
+*.dtproj text eol=crlf
+*.dwproj text eol=crlf
+*.slnx text eol=crlf
+*.conmgr text eol=crlf
+*.dim text eol=crlf
+*.cube text eol=crlf
+*.dsv text eol=crlf
+*.ds text eol=crlf
+*.partitions text eol=crlf
+*.csv text eol=lf
+*.bak binary
+*.ispac binary

@@ -1,0 +1,36 @@
+# Visual Studio / SSDT user state and build output
+.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.ispac
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Runtime output
+*.log
+data/etl_log.txt
+data/reject_table.csv
+data/staging_area.csv
+
+# Reproducible and experimental extracts
+data/patient_source*.csv
+data/operation_source*.csv
+
+# Local SQL Server backups
+*.bak
+HealthcareDW
+
+# Earlier proof-of-concept SSIS projects
+demo_ssis/
+HealthcareDW_ETL/
+
+# Operating system files
+.DS_Store
+Thumbs.db

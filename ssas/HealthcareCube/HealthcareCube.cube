@@ -1,0 +1,869 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fe54faac-2d35-4a51-a471-40b1f115227e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>HealthcareCube</ID>
+  <Name>HealthcareCube</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="42" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5641" scrolltop="7891" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="65" x="17759" y="13272" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimHospital" left="12335" top="3988" logicalid="21" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000034060000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="HealthcareDW_DimHospital" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactAdmission" left="6249" top="5450" logicalid="22" controlid="2" masterid="0" hint1="0" hint2="0" width="3620" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000240e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="HealthcareDW_FactAdmission" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimAdmissionType" left="20" top="4707" logicalid="23" controlid="3" masterid="0" hint1="0" hint2="0" width="3895" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000370f000034060000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="HealthcareDW_DimAdmissionType" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimInsurance" left="3668" top="0" logicalid="24" controlid="4" masterid="0" hint1="0" hint2="0" width="3514" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ba0d000034060000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="HealthcareDW_DimInsurance" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimDoctor" left="9582" top="0" logicalid="25" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000034060000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="HealthcareDW_DimDoctor" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimPatient" left="12335" top="7976" logicalid="26" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000d30b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="HealthcareDW_DimPatient" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimDate" left="1018" top="13402" logicalid="27" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="4826" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000da120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="HealthcareDW_DimDate" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimMedicalCondition" left="6418" top="13402" logicalid="28" controlid="8" masterid="0" hint1="0" hint2="0" width="3112" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000280c000034060000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="HealthcareDW_DimMedicalCondition" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimMedication" left="613" top="8695" logicalid="29" controlid="9" masterid="0" hint1="0" hint2="0" width="3302" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e60c000034060000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="HealthcareDW_DimMedication" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTestResult" left="11930" top="13402" logicalid="30" controlid="10" masterid="0" hint1="0" hint2="0" width="3302" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e60c000034060000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="HealthcareDW_DimTestResult" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9569" top="4383" logicalid="31" controlid="11" masterid="0" hint1="0" hint2="0" width="3066" height="3317" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_HealthcareDW_FactAdmission_HospitalKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="12" destattachpoint="21" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12335" y="4782" />
+              <point x="11135" y="4782" />
+              <point x="11135" y="7400" />
+              <point x="9869" y="7400" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3219" top="10150" logicalid="32" controlid="12" masterid="0" hint1="0" hint2="0" width="4040" height="3752" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_HealthcareDW_FactAdmission_DischargeDateKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="2" sourceattachpoint="8" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3618" y="13402" />
+              <point x="3618" y="11926" />
+              <point x="6959" y="11926" />
+              <point x="6959" y="10450" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9569" top="8750" logicalid="33" controlid="13" masterid="0" hint1="0" hint2="0" width="3066" height="1139" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_HealthcareDW_FactAdmission_PatientKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="2" sourceattachpoint="14" destattachpoint="27" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12335" y="9489" />
+              <point x="11135" y="9489" />
+              <point x="11135" y="9050" />
+              <point x="9869" y="9050" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="7575" top="10150" logicalid="34" controlid="14" masterid="0" hint1="0" hint2="0" width="799" height="3752" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_HealthcareDW_FactAdmission_ConditionKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="2" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7974" y="13402" />
+              <point x="7974" y="11699" />
+              <point x="8059" y="11699" />
+              <point x="8059" y="10450" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3615" top="7650" logicalid="35" controlid="15" masterid="0" hint1="0" hint2="0" width="2934" height="2239" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_HealthcareDW_FactAdmission_MedicationKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="2" sourceattachpoint="13" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3915" y="9489" />
+              <point x="5115" y="9489" />
+              <point x="5115" y="7950" />
+              <point x="6249" y="7950" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="5026" top="1089" logicalid="36" controlid="16" masterid="0" hint1="0" hint2="0" width="2233" height="4661" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_HealthcareDW_FactAdmission_InsuranceKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="2" sourceattachpoint="7" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5425" y="1588" />
+              <point x="5425" y="3291" />
+              <point x="6959" y="3291" />
+              <point x="6959" y="5450" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8309" top="1089" logicalid="37" controlid="17" masterid="0" hint1="0" hint2="0" width="3173" height="4661" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_HealthcareDW_FactAdmission_DoctorKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="2" sourceattachpoint="5" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11082" y="1588" />
+              <point x="11082" y="3291" />
+              <point x="8609" y="3291" />
+              <point x="8609" y="5450" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2669" top="10150" logicalid="38" controlid="18" masterid="0" hint1="0" hint2="0" width="4040" height="3752" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_HealthcareDW_FactAdmission_DateKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="2" sourceattachpoint="6" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3068" y="13402" />
+              <point x="3068" y="11926" />
+              <point x="6409" y="11926" />
+              <point x="6409" y="10450" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8859" top="10150" logicalid="39" controlid="19" masterid="0" hint1="0" hint2="0" width="5122" height="3752" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_HealthcareDW_FactAdmission_TestResultKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="2" sourceattachpoint="4" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13581" y="13402" />
+              <point x="13581" y="11699" />
+              <point x="9159" y="11699" />
+              <point x="9159" y="10450" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3615" top="5102" logicalid="40" controlid="20" masterid="0" hint1="0" hint2="0" width="2934" height="1498" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_HealthcareDW_FactAdmission_AdmissionTypeKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="2" sourceattachpoint="17" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3915" y="5501" />
+              <point x="5115" y="5501" />
+              <point x="5115" y="6300" />
+              <point x="6249" y="6300" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-5641</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>7891</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>65</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="48f71398-f30d-489e-ab21-ee4591f1f6d5">
+      <ID>Discharge Date</ID>
+      <Name>Discharge Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1abceabc-ab5d-4b24-bbc5-01e5ec847f4a">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c89af1e0-ef36-46d7-a826-cf544fa8adb3">
+          <AttributeID>Week Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a2f0fe87-0107-42c5-93a8-3898d9cf256f">
+          <AttributeID>Is Weekend</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4b1816fa-df2f-4c5f-86b0-cff6bbda08a2">
+          <AttributeID>Full Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8d39959e-86de-4360-a092-eebf2562f185">
+          <AttributeID>Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ccbc99c2-04ac-4ff3-b06c-ba3a774230c5">
+          <AttributeID>Day Of Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6f2b6c20-f5a6-40cf-8f6b-a35509099688">
+          <AttributeID>Day Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6f764c15-a630-435f-8a25-cacd4367b50b">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="517056d8-c348-42e0-b249-51d97338043b">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="96625082-6453-492f-acc6-848148a196ae">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2df395bd-8dac-455d-b20c-1cd8e25fae84">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="a8ef969c-9402-4411-9bd7-b46afbb603da">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="4a0a8812-8f85-4829-8f58-5e953bf03359">
+      <ID>Dim Patient</ID>
+      <Name>Dim Patient</Name>
+      <DimensionID>Dim Patient</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="990d69e2-94e0-4ee9-9a9c-593b69c82973">
+          <AttributeID>Patient Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9f59a58d-cf99-491b-8a80-e237d9b915d4">
+          <AttributeID>Patient Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="49facdf1-7033-44e5-a41e-b97b7755c1c9">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2f2764ed-a65b-421b-ab50-045e2476b2e0">
+          <AttributeID>Blood Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9d7afe79-e284-4e52-a0c6-0e28cb483808">
+          <AttributeID>Age Group</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5192e519-f5c9-4f86-b3c8-0278bb2bf75e">
+      <ID>Dim Medical Condition</ID>
+      <Name>Dim Medical Condition</Name>
+      <DimensionID>Dim Medical Condition</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="db539647-80f7-4a19-b15d-e3431df08728">
+          <AttributeID>Condition Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="88fd7229-2ea2-494d-8a3c-54d932ef8903">
+          <AttributeID>Condition Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1f886aef-5455-42ed-9b5e-3214d0901109">
+      <ID>Dim Medication</ID>
+      <Name>Dim Medication</Name>
+      <DimensionID>Dim Medication</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4e4f5180-a56a-4234-8bef-69a04f0d4fd2">
+          <AttributeID>Medication Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c4be70f4-cab9-4fe7-b39e-a8d2a56f1ea5">
+          <AttributeID>Medication Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b1d9efda-d6ed-48fa-96ef-3f4db0186647">
+      <ID>Dim Insurance</ID>
+      <Name>Dim Insurance</Name>
+      <DimensionID>Dim Insurance</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="08e64e98-0496-4eeb-b474-95beadf7d336">
+          <AttributeID>Insurance Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a288546f-d2d7-4f84-9ea9-d42cc3ac4350">
+          <AttributeID>Insurance Provider</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d280b09a-7e2e-4688-9498-1ec0672f9d49">
+      <ID>Dim Doctor</ID>
+      <Name>Dim Doctor</Name>
+      <DimensionID>Dim Doctor</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d21d2322-0057-4b41-baf0-031445841c1e">
+          <AttributeID>Doctor Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="52e8abef-f699-4a66-89b4-9a341dc322d8">
+          <AttributeID>Doctor Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d3d7a330-c314-45a3-a2f8-e210acad098e">
+      <ID>Dim Hospital</ID>
+      <Name>Dim Hospital</Name>
+      <DimensionID>Dim Hospital</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4c0166be-b06b-4e7a-9169-24be7d986681">
+          <AttributeID>Hospital Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="994c6f66-ba21-4e7e-a7df-76793eee255e">
+          <AttributeID>Hospital Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="26fec9f9-5ccb-4b68-8914-6c9cb0e7982f">
+      <ID>Dim Date</ID>
+      <Name>Admission Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fc9456bf-a0d7-4740-a354-a1aef5d7d61c">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="280567b2-b4c0-499f-bc69-9132eacc0f63">
+          <AttributeID>Week Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f4de1455-a714-46f8-aed4-369a88e17150">
+          <AttributeID>Is Weekend</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="01b2b07b-c0e8-429e-b49e-2dfc2d00a6ab">
+          <AttributeID>Full Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7fe58e81-f191-439d-8ec4-c532dccf5816">
+          <AttributeID>Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8e2292bf-f61a-44e8-86f2-5eaa4abd1f3a">
+          <AttributeID>Day Of Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="afa2e3e1-b111-4676-a502-a4758851360f">
+          <AttributeID>Day Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4e8386ae-1b77-4d5b-ab23-1a41ddc6db2b">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6d418eff-72c6-422c-8a80-f921d95eb959">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="66cd934d-803e-468b-8eb8-7d43c9a21ade">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0bae270d-69db-43f4-9d12-45dec3fe62ca">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="8bad3434-233e-42f5-995e-977b2e9d8262">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="534c30bb-fedb-4322-9aa5-2b233d5b0fef">
+      <ID>Dim Test Result</ID>
+      <Name>Dim Test Result</Name>
+      <DimensionID>Dim Test Result</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4788f7a8-60ef-4efe-9907-a3bdb1c5834f">
+          <AttributeID>Test Result Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="59c24a6c-347f-4806-b81f-e54efc3a38e8">
+          <AttributeID>Test Result Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b7190bc7-6ebd-45b5-9e3b-df5bc550cacf">
+      <ID>Dim Admission Type</ID>
+      <Name>Dim Admission Type</Name>
+      <DimensionID>Dim Admission Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c228b80c-2e0f-45aa-a5da-cff94cdf3a1b">
+          <AttributeID>Admission Type Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c7ef4cf6-3dec-48f0-ad9d-f18acbe491c3">
+          <AttributeID>Admission Type Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="260178ac-69e7-4762-a192-37647427714e">
+      <ID>Fact Admission</ID>
+      <Name>Fact Admission</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="47cbcd35-9a57-42db-9ac8-d9c02927362f">
+          <ID>Billing Amount</ID>
+          <Name>Billing Amount</Name>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="27361ed8-b4a4-4d17-bb55-f9377cb0fc5d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e62d2e36-7166-40cd-aed8-7643725c1c35">
+              <TableID>HealthcareDW_FactAdmission</TableID>
+              <ColumnID>BillingAmount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d5bf509c-997b-4fb8-a692-f00750f7264c">
+          <ID>Length Of Stay</ID>
+          <Name>Length Of Stay</Name>
+          <Source dwd:design-time-name="ef037847-a42c-4ea2-befe-38ea9e6ae70a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ea45bd47-d958-4d68-a38a-c6c976308f90">
+              <TableID>HealthcareDW_FactAdmission</TableID>
+              <ColumnID>LengthOfStay</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="381ffbed-4360-48e0-88f7-8b29be55d78b">
+          <ID>Fact Admission Count</ID>
+          <Name>Admission Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="d6f6d4f2-1555-497a-bc7e-a61f39e92860">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="638e0971-4362-4ada-910e-232537c823fe">
+              <TableID>HealthcareDW_FactAdmission</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3939d2ed-671d-4837-82af-9b24b28efaaf">
+          <CubeDimensionID>Dim Patient</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ba95a4cf-aac7-4b29-a884-16d82e142695">
+              <AttributeID>Patient Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="af585d5f-9ad7-430e-873a-19fd992381a5">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7745eeff-3ce9-405e-93f6-9eb9dd137a60">
+                    <TableID>HealthcareDW_FactAdmission</TableID>
+                    <ColumnID>PatientKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5c795754-2675-4aa1-99eb-da447a9ef617">
+          <CubeDimensionID>Dim Medical Condition</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="eb177ec1-8d7f-4ed2-94cc-81a48ea0baac">
+              <AttributeID>Condition Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ae6b8dfc-b145-4a66-9a04-6f4b69d78529">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="839eacf9-875b-4ab2-9a15-ef2ada4e0210">
+                    <TableID>HealthcareDW_FactAdmission</TableID>
+                    <ColumnID>ConditionKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1c9abb6a-7e74-4d23-8d0c-fd40efc41637">
+          <CubeDimensionID>Dim Medication</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3842765d-550b-4e03-9191-8543cb664fd6">
+              <AttributeID>Medication Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="adb92607-6644-467a-a330-f389fe0367c2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="52f5f009-fe71-4217-831a-8e45ca360531">
+                    <TableID>HealthcareDW_FactAdmission</TableID>
+                    <ColumnID>MedicationKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f345b80a-d255-4861-be36-914a809a0b26">
+          <CubeDimensionID>Dim Insurance</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1731e1e2-c885-4b6f-9401-76c61c10a411">
+              <AttributeID>Insurance Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c95d3217-8fb8-4945-8caf-b75092e05379">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5a69ff89-e8fa-465e-aea1-59572cbaf93f">
+                    <TableID>HealthcareDW_FactAdmission</TableID>
+                    <ColumnID>InsuranceKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c6cfc721-f60d-424d-b8f0-02dfa4200120">
+          <CubeDimensionID>Dim Doctor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ae98f97c-d4ed-49e5-9fa9-3764e065d2a3">
+              <AttributeID>Doctor Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e15eafc1-4101-46a3-a745-21d01c7ea31e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="540c50cf-450f-418b-81d4-c18e393f3354">
+                    <TableID>HealthcareDW_FactAdmission</TableID>
+                    <ColumnID>DoctorKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fe2555e3-cd0f-40a4-8b4d-82685a3a21ed">
+          <CubeDimensionID>Dim Hospital</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9f519754-817f-43ab-b885-51049e33cb24">
+              <AttributeID>Hospital Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6007d5af-8a33-44f9-a91d-e10ae14eb8eb">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="33426df4-e924-44b4-994a-958c38c00b61">
+                    <TableID>HealthcareDW_FactAdmission</TableID>
+                    <ColumnID>HospitalKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d7b0b254-0f5b-408a-b238-f8b888ac4a09">
+          <CubeDimensionID>Dim Test Result</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5d6b1408-fd8e-48e0-bc52-01531ba1c183">
+              <AttributeID>Test Result Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c4712b33-337c-4e1c-8198-381ee500bc97">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f931297f-6746-425a-ad14-680626e311f8">
+                    <TableID>HealthcareDW_FactAdmission</TableID>
+                    <ColumnID>TestResultKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f29d5a80-005b-4d40-b197-5b26c3bef830">
+          <CubeDimensionID>Dim Admission Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8ba36305-f4f9-44dc-9999-2f0cefc75f46">
+              <AttributeID>Admission Type Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0abcc976-524c-4996-a1d3-b069d08c6633">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0b73f7b9-22b9-4166-848d-3573b2bd450e">
+                    <TableID>HealthcareDW_FactAdmission</TableID>
+                    <ColumnID>AdmissionTypeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eb85c063-5a20-4bbf-8afc-dd881243b48a">
+          <CubeDimensionID>Discharge Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2a410361-eea9-4f26-bebb-1ac900c24284">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2ba488dc-b492-44f9-b7dc-59c3a4e9aaff">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c58c2d02-8b50-44a6-842d-6ce15d1c8d7f">
+                    <TableID>HealthcareDW_FactAdmission</TableID>
+                    <ColumnID>DischargeDateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0c06974c-62ab-4f99-81d9-c2983ca97b95">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4dc67adc-8a2a-4e61-bcc0-8f77138a8e33">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a74ee4da-4124-4f77-8a87-9c00b5b9672d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8cca0f26-f981-4b60-a871-dcd6de63129d">
+                    <TableID>HealthcareDW_FactAdmission</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="be3a38f5-a371-4986-992e-c2487b515acb">
+    <DataSourceViewID>HealthcareDW</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="6f7e003d-8ed7-44dd-ad7d-84ddc4b9ed88">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE;  
+
+CREATE MEMBER CURRENTCUBE.[Measures].[ALOS]
+AS
+IIF(
+    [Measures].[Admission Count] = 0,
+    NULL,
+    [Measures].[Length Of Stay] / [Measures].[Admission Count]
+),
+FORMAT_STRING = "0.00";  
+
+CREATE MEMBER CURRENTCUBE.[Measures].[RevenuePerDay]
+AS
+IIF(
+    [Measures].[Length Of Stay] = 0,
+    NULL,
+    [Measures].[Billing Amount] / [Measures].[Length Of Stay]
+),
+FORMAT_STRING = "0.00";  
+
+CREATE MEMBER CURRENTCUBE.[Measures].[AbnormalTestRate]
+ AS IIF(
+    [Measures].[Admission Count] = 0,
+    NULL,
+    (
+        [Measures].[Admission Count],
+        [Dim Test Result].[Test Result Name].&amp;[Abnormal]
+    ) / [Measures].[Admission Count] * 100
+), 
+FORMAT_STRING = "0.00", 
+VISIBLE = 1  ;  
+
+CREATE MEMBER CURRENTCUBE.[Measures].[EmergencyRate]
+ AS IIF(
+    [Measures].[Admission Count] = 0,
+    NULL,
+    (
+        [Measures].[Admission Count],
+        [Dim Admission Type].[Admission Type Name].&amp;[Emergency]
+    ) / [Measures].[Admission Count] * 100
+), 
+FORMAT_STRING = "0.00", 
+VISIBLE = 1  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>
