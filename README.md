@@ -34,10 +34,21 @@ Mô hình đích gồm các chiều bệnh nhân, bác sĩ, bệnh viện, bảo
 loại nhập viện, tình trạng bệnh và kết quả xét nghiệm. Hai bảng fact lưu chi tiết
 lần nhập viện và tổng hợp bệnh viện theo tháng.
 
+## Dashboard Power BI
+
+### Dashboard tổng quan điều hành
+
+![Healthcare executive dashboard](assets/images/healthcare-executive-dashboard.png)
+
+### Dashboard phân tích vận hành
+
+![Healthcare operations dashboard](assets/images/healthcare-operations-dashboard.png)
+
 ## Cấu trúc repository
 
 | Đường dẫn | Nội dung |
 | --- | --- |
+| `assets/images/` | Ảnh minh họa dashboard Power BI |
 | `scripts/prepare_sources.py` | Tách và kiểm tra dữ liệu nguồn một cách tái lập |
 | `data/` | Dataset gốc và notebook minh họa |
 | `ssis/HealthcareETL/` | Project SSIS nạp staging vào data warehouse |
@@ -99,4 +110,3 @@ python scripts/prepare_sources.py \
   --input data/healthcare_admissions.csv \
   --output-dir /tmp/healthcare-extracts
 ```
-
